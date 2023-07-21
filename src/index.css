@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @font-face {
+  font-family: "LAMASANSEXTRABOLD";
+  src: url("./assets/fonts/TheSans-Bold.otf");
+}
+
+@font-face {
+  font-family: "LAMASANSBOLD";
+  src: url("./assets/fonts/TheSans-Bold.otf");
+}
+@font-face {
+  font-family: "LAMASANSREGULAR";
+  src: url("./assets/fonts/TheSansArabic-Light.ttf");
+}
+@font-face {
+  font-family: "LAMASANSMEDIUM";
+  src: url("./assets/fonts/TheSans-Plain.ttf");
+} */
+
+.border-text {
+	/* color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; */
+	-webkit-text-stroke: 3px black;
+}
+:root {
+	--primary: transparent;
+	--secondary: #a98942;
+}
+* {
+	scrollbar-width: thin;
+	scrollbar-color: var(--secondary) var(--primary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+	background: var(--primary);
+	border-radius: 1px;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: var(--secondary);
+	border-radius: 26px;
+	border: 3px solid var(--primary);
+}
