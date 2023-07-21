@@ -6,6 +6,8 @@ import NearbyT1 from "./components/NearbyT1";
 import LocationT1 from "./components/LocationT1";
 import RegisterT1 from "../../components/UI/RegisterT1";
 import HeaderT2 from "./components/HeaderT2";
+import PaymentPlanT2 from "./components/PaymentPlanT2";
+import PhotoGalleryT1 from "./components/PhotoGalleryT1";
 const Home = () => {
   return (
     <>
@@ -13,13 +15,16 @@ const Home = () => {
       {/* <HeaderT1 /> */}
       <HeaderT2 />
       <div id="payment" />
-      <PaymentPlanT1 />
+      {/* <PaymentPlanT1 /> */}
+      <PaymentPlanT2 />
+      <div id="gallery" />
+      <PhotoGalleryT1 />
       <div id="floorPlan" />
-      <FloorPlanT1 />
+      {/* <FloorPlanT1 /> */}
       <div id="nearby" />
-      <NearbyT1 />
+      {/* <NearbyT1 /> */}
       <div id="location" />
-      <LocationT1 />
+      {/* <LocationT1 /> */}
       <div id="contactus" />
       <RegisterT1 />
     </>
