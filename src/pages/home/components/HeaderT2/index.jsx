@@ -6,7 +6,7 @@ const HeaderT2 = () => {
 	const { t, i18n } = useTranslation();
 	return (
 		<div
-			className=' bg-cover bg-center bg-no-repeat h-[700px] lg:h-[750px] 2xl:h-[1080px] '
+			className=' bg-cover bg-center bg-no-repeat h-[700px] lg:h-[750px] 2xl:h-[1000px] '
 			style={{
 				backgroundImage: `url(${data.HeroBottom})`,
 			}}
