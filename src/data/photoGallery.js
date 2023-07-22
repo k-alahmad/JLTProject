@@ -11,5 +11,9 @@ export const data = {
       type: "Exteriors",
       imgs: [heroRight, heroLeft, heroRight],
     },
+    {
+      type: "Amenities",
+      imgs: [heroRight, heroLeft, heroRight],
+    },
   ],
 };

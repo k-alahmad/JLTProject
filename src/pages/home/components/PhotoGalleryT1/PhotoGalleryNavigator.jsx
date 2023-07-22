@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const PhotoGalleryNavigator = ({ selected, setSelected, insideSliderRef }) => {
   const [selectedImg, setSelectedImg] = useState();
   return (
-    <div>
+    <div className="px-[2%]">
       <div className="flex flex-row justify-center items-center gap-x-12 text-small font-semibold">
         {data.navBtns.map((item, index) => {
           return (
@@ -13,7 +13,7 @@ const PhotoGalleryNavigator = ({ selected, setSelected, insideSliderRef }) => {
                 setSelected(index);
               }}
               key={index}
-              className={`uppercase h-20 w-32 border-b-2 origin-bottom rounded ${
+              className={`uppercase h-20 w-32  border-b-2 origin-bottom rounded ${
                 selected == index
                   ? "bg-primary text-white"
                   : "border-primary transition-all duration-500"
@@ -26,7 +26,7 @@ const PhotoGalleryNavigator = ({ selected, setSelected, insideSliderRef }) => {
       </div>
 
       <motion.div
-        className="grid grid-cols-2 gap-8 px-[2%] mt-6"
+        className="grid grid-cols-2 gap-1  mt-6"
         initial={{ opacity: 0 }}
         animate={{
           opacity: 1,
