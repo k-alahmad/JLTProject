@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { data } from "../../../../data/paymentPlanData";
+import { data } from "../../../../data/photoGallery";
 import { motion } from "framer-motion";
 const PhotoGalleryNavigator = ({ selected, setSelected, insideSliderRef }) => {
   const [selectedImg, setSelectedImg] = useState();
@@ -13,7 +13,7 @@ const PhotoGalleryNavigator = ({ selected, setSelected, insideSliderRef }) => {
                 setSelected(index);
               }}
               key={index}
-              className={`uppercase h-20 w-40 border-b-2 origin-bottom rounded ${
+              className={`uppercase h-20 w-32 border-b-2 origin-bottom rounded ${
                 selected == index
                   ? "bg-primary text-white"
                   : "border-primary transition-all duration-500"
@@ -26,7 +26,7 @@ const PhotoGalleryNavigator = ({ selected, setSelected, insideSliderRef }) => {
       </div>
 
       <motion.div
-        className="grid grid-cols-3 gap-8 px-[2%] mt-6"
+        className="grid grid-cols-2 gap-8 px-[2%] mt-6"
         initial={{ opacity: 0 }}
         animate={{
           opacity: 1,

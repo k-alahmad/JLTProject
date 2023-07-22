@@ -1,6 +1,3 @@
-import heroRight from "../assets/images/heroRight.webp";
-import heroLeft from "../assets/images/heroLeft.webp";
-
 export const data = {
   template: 1,
   title: "PaymentPlan",

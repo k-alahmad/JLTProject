@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import useWindowDimensions from "../../../../hooks/screenDimentions";
 import PhotoGalleryNavigator from "./PhotoGalleryNavigator";
 import ImagesSlider from "./PhotoGalleryImagesSlider";
-import { data } from "../../../../data/paymentPlanData";
+import { data } from "../../../../data/photoGallery";
 import { motion } from "framer-motion";
 const PhotoGalleryT1 = () => {
   const { width } = useWindowDimensions();
@@ -13,7 +13,7 @@ const PhotoGalleryT1 = () => {
     <div className="overflow-hidden">
       <div
         style={{ width: width, maxWidth: "1920px" }}
-        className="grid grid-cols-12 mt-12"
+        className="grid grid-cols-12 mt-12 gap-1"
       >
         <div className="col-span-3">
           <PhotoGalleryNavigator
