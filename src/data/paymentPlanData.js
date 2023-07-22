@@ -4,9 +4,13 @@ export const data = {
   type: "PaymentPlanType",
   plans: [
     {
-      number: 20,
-      text: "BookingAmount",
-      customStyle: "left-[4%] capitalize",
+      title: 20,
+      subtitle: "BookingAmount",
+      feature: [
+        { text: "feature 1 " },
+        { text: "feature 2 " },
+        { text: "feature 3 " },
+      ],
     },
     {
       number: 60,
