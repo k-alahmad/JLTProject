@@ -1,3 +1,6 @@
+import heroRight from "../assets/images/heroRight.webp";
+import heroLeft from "../assets/images/heroLeft.webp";
+
 export const data = {
   template: 1,
   title: "PaymentPlan",
@@ -21,6 +24,16 @@ export const data = {
       number: 20,
       text: "finalInsallment",
       customStyle: "left-[75%] capitalize",
+    },
+  ],
+  navBtns: [
+    {
+      type: "interiors",
+      imgs: [heroLeft, heroRight, heroLeft],
+    },
+    {
+      type: "exteriors",
+      imgs: [heroRight, heroLeft, heroRight],
     },
   ],
 };

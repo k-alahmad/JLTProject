@@ -4,7 +4,7 @@ import NavBarT2 from "../NavBar/NavBarT2";
 import Footer from "../Footer";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import Brochure from "../Brochure/index";
+// import Brochure from "../Brochure/index";
 import useWindowDimensions from "../../../hooks/screenDimentions";
 import { showModal } from "../../../redux/modal.slice";
 import { useDispatch } from "react-redux";
