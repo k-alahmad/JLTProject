@@ -8,7 +8,7 @@ import {
 } from "react-icons/md";
 import { data } from "../../../../data/paymentPlanData";
 
-const ImagesSlider = ({ selected, insideSliderRef }) => {
+const ImagesSlider = ({ imgs, insideSliderRef }) => {
   // const [currentSlide, setCurrentSlide] = useState(0);
   function SampleNextArrow({ onClick }) {
     return (
@@ -16,7 +16,7 @@ const ImagesSlider = ({ selected, insideSliderRef }) => {
         className="absolute cursor-pointer z-30 right-[5%] top-[50%] rounded-full"
         onClick={onClick}
       >
-        <MdArrowForwardIos className="text-secondary text-[55px]" />
+        <MdArrowForwardIos className="text-white shadow-2xl drop-shadow-2xl text-[70px]" />
       </div>
     );
   }
@@ -26,7 +26,7 @@ const ImagesSlider = ({ selected, insideSliderRef }) => {
         className="absolute cursor-pointer z-30 left-[5%] top-[50%] rounded-full"
         onClick={onClick}
       >
-        <MdArrowBackIos className="text-secondary text-[55px]" />
+        <MdArrowBackIos className="text-white shadow-2xl drop-shadow-2xl text-[70px]" />
       </div>
     );
   }
@@ -36,7 +36,7 @@ const ImagesSlider = ({ selected, insideSliderRef }) => {
       arrows={true}
       // dots={true}
       infinite={true}
-      speed={500}
+      speed={400}
       slidesToScroll={1}
       slidesToShow={1}
       touchMove
@@ -75,7 +75,7 @@ const ImagesSlider = ({ selected, insideSliderRef }) => {
       //   );
       // }}
     >
-      {data.navBtns[selected].imgs.map((item, i) => {
+      {imgs.map((item, i) => {
         return (
           <img
             key={i}

@@ -1,12 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { data } from "../../../../data/paymentPlanData";
-
-const PhotoGalleryNavigator = ({
-  selected,
-  setSelected,
-  sliderRef,
-  insideSliderRef,
-}) => {
+import { motion } from "framer-motion";
+const PhotoGalleryNavigator = ({ selected, setSelected, insideSliderRef }) => {
+  const [selectedImg, setSelectedImg] = useState();
   return (
     <div>
       <div className="flex flex-row justify-center items-center gap-x-12 text-small font-semibold">
@@ -14,7 +10,6 @@ const PhotoGalleryNavigator = ({
           return (
             <button
               onClick={() => {
-                sliderRef.current.slickGoTo(index);
                 setSelected(index);
               }}
               key={index}
@@ -30,21 +25,32 @@ const PhotoGalleryNavigator = ({
         })}
       </div>
 
-      <div className="grid grid-cols-3 gap-8 px-[2%] mt-6">
+      <motion.div
+        className="grid grid-cols-3 gap-8 px-[2%] mt-6"
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+        }}
+        transition={{ duration: 0.5 }}
+        key={selected}
+      >
         {data.navBtns[selected].imgs.map((img, index) => {
           return (
             <img
               src={img}
               key={index}
-              className={`rounded-lg h-44 object-cover cursor-pointer`}
+              className={`rounded-lg h-44 object-cover cursor-pointer border-4 transition-all duration-500 drop-shadow-2xl ${
+                selectedImg == index ? "border-primary" : "border-transparent"
+              }`}
               alt=""
               onClick={() => {
                 insideSliderRef.current.slickGoTo(index);
+                setSelectedImg(index);
               }}
             />
           );
         })}
-      </div>
+      </motion.div>
     </div>
   );
 };

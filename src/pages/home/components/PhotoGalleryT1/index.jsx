@@ -1,33 +1,41 @@
 import React, { useRef, useState } from "react";
 import useWindowDimensions from "../../../../hooks/screenDimentions";
-import CarouselSlider from "./PhotoGalleryCarouselSlider";
 import PhotoGalleryNavigator from "./PhotoGalleryNavigator";
+import ImagesSlider from "./PhotoGalleryImagesSlider";
+import { data } from "../../../../data/paymentPlanData";
+import { motion } from "framer-motion";
 const PhotoGalleryT1 = () => {
   const { width } = useWindowDimensions();
   const [selected, setSelected] = useState(0);
-  const sliderRef = useRef();
   const insideSliderRef = useRef();
 
   return (
     <div className="overflow-hidden">
       <div
         style={{ width: width, maxWidth: "1920px" }}
-        className="grid  grid-cols-12 mt-12"
+        className="grid grid-cols-12 mt-12"
       >
         <div className="col-span-3">
           <PhotoGalleryNavigator
             selected={selected}
             setSelected={setSelected}
-            sliderRef={sliderRef}
             insideSliderRef={insideSliderRef}
           />
         </div>
         <div className="col-span-9">
-          <CarouselSlider
-            sliderRef={sliderRef}
-            insideSliderRef={insideSliderRef}
-            selected={selected}
-          />
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{
+              opacity: 1,
+            }}
+            transition={{ duration: 0.5 }}
+            key={selected}
+          >
+            <ImagesSlider
+              imgs={data.navBtns[selected].imgs}
+              insideSliderRef={insideSliderRef}
+            />
+          </motion.div>
         </div>
       </div>
     </div>
