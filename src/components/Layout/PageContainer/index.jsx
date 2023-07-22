@@ -60,7 +60,7 @@ const PageLayout = ({ children, type }) => {
 					children
 				)}
 			</div>
-			<Brochure />
+			{/* <Brochure /> */}
 			<Footer />
 			<Modal />
 		</div>
