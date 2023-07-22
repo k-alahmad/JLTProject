@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 const Footer = () => {
 	return (
-		<div className='grid md:grid-cols-2 bg-primary w-full px-[3%] py-[3%] items-center justify-center justify-items-center  '>
+		<div className='grid md:grid-cols-2 bg-gradient-to-b from-secondary to-primary w-full px-[3%] py-[3%] items-center justify-center justify-items-center  '>
 			<div className='text-base md:text-lg text-offWhite'>
 				<p className='py-4'>2023 AVA REAL ESTATE, LLC. All rights reserved</p>
 			</div>

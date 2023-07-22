@@ -26,14 +26,4 @@ export const data = {
       customStyle: "left-[75%] capitalize",
     },
   ],
-  navBtns: [
-    {
-      type: "interiors",
-      imgs: [heroLeft, heroRight, heroLeft],
-    },
-    {
-      type: "exteriors",
-      imgs: [heroRight, heroLeft, heroRight],
-    },
-  ],
 };
