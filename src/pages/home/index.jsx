@@ -2,6 +2,7 @@ import React from "react";
 import HeaderT1 from "./components/HeaderT1";
 import PaymentPlanT1 from "./components/PaymentPlanT1";
 import FloorPlanT1 from "./components/FloorPlanT1";
+import FloorPlanT2 from "./components/FloorPlanT2";
 import NearbyT2 from "./components/NearbyT2";
 import LocationT1 from "./components/LocationT1";
 import RegisterT1 from "../../components/UI/RegisterT1";
@@ -21,6 +22,7 @@ const Home = () => {
       <PhotoGalleryT1 />
       <div id="floorPlan" />
       {/* <FloorPlanT1 /> */}
+      <FloorPlanT2 />
       <div id="nearby" />
       {/* <NearbyT1 /> */}
       <NearbyT2 />

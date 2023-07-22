@@ -13,7 +13,11 @@ import floor12 from "../assets/images/floorplan/XX12.svg";
 import floor13 from "../assets/images/floorplan/XX13.svg";
 import floor14 from "../assets/images/floorplan/XX14.svg";
 import floor15 from "../assets/images/floorplan/XX15.svg";
-
+////////////////
+import Studio from "../assets/images/floorplan/Studio.webp";
+import BR1 from "../assets/images/floorplan/1BR.webp";
+import BR2 from "../assets/images/floorplan/2BR.webp";
+import BR3 from "../assets/images/floorplan/3BR.webp";
 export const data = {
   template: 1,
   title: "floorTitle",
@@ -167,6 +171,41 @@ export const data = {
       suite: "785.12 SQ.FT.",
       balcony: "59.09 SQ.FT.",
       total: "844.21 SQ.FT",
+    },
+  ],
+
+  floors: [
+    {
+      btnTitle: "All",
+      btnSubTitle: "Studios",
+      title: "Studio Units",
+      icon: "",
+      total: "428 sqft",
+      img: Studio,
+    },
+    {
+      btnTitle: "1",
+      btnSubTitle: "BR",
+      title: "1-Bedroom Units",
+      icon: "",
+      total: "826 sqft",
+      img: BR1,
+    },
+    {
+      btnTitle: "2",
+      btnSubTitle: "BR",
+      title: "2-Bedroom Units",
+      icon: "",
+      total: "1,491 sqft",
+      img: BR2,
+    },
+    {
+      btnTitle: "3",
+      btnSubTitle: "BR",
+      title: "3-Bedroom Units",
+      icon: "",
+      total: "2,218 sqft",
+      img: BR3,
     },
   ],
 };
