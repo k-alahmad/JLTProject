@@ -10,7 +10,7 @@ import { showModal } from "../../../redux/modal.slice";
 import { handleScroll } from "../../../helpers/scroll";
 import { NavElement } from "../../../data/navData";
 import RegisterT1 from "../../UI/RegisterT1";
-const NavBar = () => {
+const NavBarT1 = () => {
 	const { t, i18n } = useTranslation();
 	const [mobileOpen, setMobileOpen] = useState(false);
 	const [header, setHeader] = useState(false);
@@ -38,7 +38,7 @@ const NavBar = () => {
 					dir={i18n.language == "en" ? "" : "rtl"}
 					className={`${
 						header
-							? "shadow-2xl w-[95%] lg:w-[80%] translate-y-2 bg-transparent"
+							? "shadow-2xl w-[95%] lg:w-[80%] translate-y-2"
 							: "w-[95%] translate-y-0"
 					}   border-white border-2 bg-white transition-all duration-500 z-40 fixed rounded-2xl max-lg:px-3`}
 				>
@@ -89,4 +89,4 @@ const NavBar = () => {
 	);
 };
 
-export default NavBar;
+export default NavBarT1;

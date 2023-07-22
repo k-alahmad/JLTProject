@@ -6,7 +6,7 @@ const HeaderT2 = () => {
 	const { t, i18n } = useTranslation();
 	return (
 		<div
-			className=' bg-cover bg-center bg-no-repeat h-[700px] lg:h-[850px] 2xl:h-[1000px] '
+			className=' bg-cover bg-center bg-no-repeat h-[700px] lg:h-[750px] 2xl:h-[1080px] '
 			style={{
 				backgroundImage: `url(${data.HeroBottom})`,
 			}}
@@ -27,9 +27,6 @@ const HeaderT2 = () => {
 					}}
 				>
 					<HeaderTextSlider />
-					<button className='absolute top-[55%] left-[40%] bg-primary text-white font-bold w-[150px] h-12 rounded-xl items-center justify-center hover:bg-secondary '>
-						Register Now
-					</button>
 					<img
 						src={data.headerWave}
 						className='w-full absolute bottom-0'

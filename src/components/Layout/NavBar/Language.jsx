@@ -4,7 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { MdRadioButtonChecked, MdRadioButtonUnchecked } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { LanguageData } from "../../../data/languageData";
-export default function Dropdown() {
+export default function Dropdown({ textColor }) {
   const { t, i18n } = useTranslation();
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
@@ -40,7 +40,7 @@ export default function Dropdown() {
             <MdRadioButtonUnchecked size={24} />
           )}
         </div>
-        <p className="text-lightBlack cursor-pointer">{name}</p>
+        <p className={`${textColor} cursor-pointer`}>{name}</p>
       </div>
     );
   };
@@ -53,8 +53,15 @@ export default function Dropdown() {
           onClick={() => setOpen(!open)}
         >
           <div className="flex border-r-2 border-lightGreyOP">
-            <p className="text-lightBlack block px-2">{t("code")}</p>
-            <IoIosArrowDown size={24} color="#3b3b3b" className="mx-2" />
+            <p
+              className={`${textColor} block px-2 transition-all duration-500`}
+            >
+              {t("code")}
+            </p>
+            <IoIosArrowDown
+              size={24}
+              className={`mx-2 ${textColor} transition-all duration-500`}
+            />
           </div>
         </div>
 
