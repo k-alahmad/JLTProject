@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import NavBar from "../NavBar";
+import NavBarT1 from "../NavBar/NavBarT1";
+import NavBarT2 from "../NavBar/NavBarT2";
 import Footer from "../Footer";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -45,7 +46,8 @@ const PageLayout = ({ children, type }) => {
   // }, []);
   return (
     <div className=" flex flex-col justify-center items-center">
-      <NavBar />
+      {/* <NavBarT1 /> */}
+      <NavBarT2 />
       <div className="min-h-screen w-full max-w-[1920px]">
         {type == "lines" ? (
           <div className="relative grid grid-cols-12 h-[5950px] sm:h-[6150px] md:h-[7400px] lg:h-[5550px] xl:h-[5400px] 2xl:h-[5550px] border-t-[1px] border-gray-200 mt-6">

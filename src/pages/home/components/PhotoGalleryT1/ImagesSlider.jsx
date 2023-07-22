@@ -3,13 +3,34 @@ import Slider from "react-slick";
 import {
   MdFiberManualRecord as FiberManualRecordIcon,
   MdOutlineFiberManualRecord as OutFiberManualRecordIcon,
+  MdArrowBackIos,
+  MdArrowForwardIos,
 } from "react-icons/md";
 const ImagesSlider = ({ imgs }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
-
+  function SampleNextArrow({ onClick }) {
+    return (
+      <div
+        className="absolute cursor-pointer z-30 right-[5%] top-[50%] rounded-full"
+        onClick={onClick}
+      >
+        <MdArrowForwardIos className="text-secondary text-[55px]" />
+      </div>
+    );
+  }
+  function SamplePrevArrow({ onClick }) {
+    return (
+      <div
+        className="absolute cursor-pointer z-30 left-[5%] top-[50%] rounded-full"
+        onClick={onClick}
+      >
+        <MdArrowBackIos className="text-secondary text-[55px]" />
+      </div>
+    );
+  }
   return (
     <Slider
-      arrows={false}
+      arrows={true}
       dots={true}
       infinite={true}
       speed={500}
@@ -19,6 +40,8 @@ const ImagesSlider = ({ imgs }) => {
       autoplay
       autoplaySpeed={4000}
       className="w-full h-full overflow-hidden"
+      nextArrow={<SampleNextArrow />}
+      prevArrow={<SamplePrevArrow />}
       beforeChange={(prev, next) => {
         setCurrentSlide(next);
       }}
@@ -54,7 +77,7 @@ const ImagesSlider = ({ imgs }) => {
           <img
             key={index}
             src={item}
-            className="h-[650px] w-full object-cover"
+            className="h-[750px] w-full object-cover"
             alt=""
           />
         );

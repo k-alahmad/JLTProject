@@ -12,16 +12,16 @@ const PaymentPlanT2 = () => {
             <div
               className={`transition-all duration-500 border-none outline-none absolute ${
                 selected == index
-                  ? "scale-125 z-20"
+                  ? "scale-[0.9] lg:scale-125 z-20"
                   : selected > index && index + 1 == selected
-                  ? "scale-100  -translate-x-full"
+                  ? "scale-75 lg:scale-100 -translate-x-[25%] lg:-translate-x-[120%]"
                   : selected > index && index + 1 !== selected
-                  ? "scale-100  translate-x-full"
+                  ? "scale-75 lg:scale-100 translate-x-[25%] lg:translate-x-[120%]"
                   : selected < index && index - 1 == selected
-                  ? "scale-100  translate-x-full"
+                  ? "scale-75 lg:scale-100 translate-x-[25%] lg:translate-x-[120%]"
                   : selected < index &&
                     index - 1 !== selected &&
-                    "scale-100  -translate-x-full"
+                    "scale-75 lg:scale-100 -translate-x-[25%] lg:-translate-x-[120%]"
               }`}
               onClick={() => setSelected(index)}
               key={index}

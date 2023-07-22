@@ -10,7 +10,7 @@ import { showModal } from "../../../redux/modal.slice";
 import { handleScroll } from "../../../helpers/scroll";
 import { NavElement } from "../../../data/navData";
 import RegisterT1 from "../../UI/RegisterT1";
-const NavBar = () => {
+const NavBarT1 = () => {
   const { t, i18n } = useTranslation();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [header, setHeader] = useState(false);
@@ -89,4 +89,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default NavBarT1;
