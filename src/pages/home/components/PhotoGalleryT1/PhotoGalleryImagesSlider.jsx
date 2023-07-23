@@ -80,7 +80,7 @@ const ImagesSlider = ({ imgs, insideSliderRef }) => {
           <img
             key={i}
             src={item}
-            className="h-[300px] md:h-[750px] w-full object-fill"
+            className="h-[500px] md:h-[750px] w-full object-contain"
             alt=""
           />
         );
