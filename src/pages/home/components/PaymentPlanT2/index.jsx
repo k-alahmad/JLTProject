@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import PaymentPlanCard from "./PaymentPlanCard";
 import { data } from "../../../../data/paymentPlanData";
+import ComponentTitle from "../../../../components/UI/ComponentTitle";
 const PaymentPlanT2 = () => {
   let elmnts = ["1", "2", "3"];
   const [selected, setSelected] = useState(1);
   return (
-    <>
-      <div className="flex flex-row justify-center items-center px-[5%] lg:px-[10%] p-20 relative h-[700px] ">
+    <div className="px-[5%] lg:px-[10%] ">
+      <ComponentTitle title={"Payment Plan"} />
+      <div className="flex flex-row justify-center items-center  relative h-[700px]">
         {data.plans.map((item, index) => {
           return (
             <div
@@ -52,7 +54,7 @@ const PaymentPlanT2 = () => {
       >
         next
       </button> */}
-    </>
+    </div>
   );
 };
 

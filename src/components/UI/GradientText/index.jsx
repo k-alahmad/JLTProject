@@ -1,21 +1,27 @@
 import React from "react";
 
 const GradientText = ({ text, className }) => {
-	return (
-		<p
-			style={{
-				background: "white",
-				// linear-gradient(266.27deg, #05AAE0 -50.84%, white 106.31%)
-				backgroundClip: "text",
-				WebkitBackgroundClip: "text",
-				color: "transparent",
-				WebkitTextFillColor: "transparent",
-			}}
-			className={`${className}`}
-		>
-			{text}
-		</p>
-	);
+  return (
+    <div
+      style={{
+        background: "linear-gradient(-25deg, #05AAE0 50%, white 50%)",
+      }}
+      className="rounded px-2"
+    >
+      <p
+        style={{
+          background: "linear-gradient(-25deg, white 50%, #05AAE0 50%)",
+          backgroundClip: "text",
+          WebkitBackgroundClip: "text",
+          color: "transparent",
+          WebkitTextFillColor: "transparent",
+        }}
+        className={`${className} drop-shadow-2xl`}
+      >
+        {text}
+      </p>
+    </div>
+  );
 };
 
 export default GradientText;

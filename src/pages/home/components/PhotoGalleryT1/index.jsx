@@ -4,6 +4,7 @@ import PhotoGalleryNavigator from "./PhotoGalleryNavigator";
 import ImagesSlider from "./PhotoGalleryImagesSlider";
 import { data } from "../../../../data/photoGallery";
 import { motion } from "framer-motion";
+import ComponentTitle from "../../../../components/UI/ComponentTitle";
 const PhotoGalleryT1 = () => {
   const { width } = useWindowDimensions();
   const [selected, setSelected] = useState(0);
@@ -11,9 +12,10 @@ const PhotoGalleryT1 = () => {
 
   return (
     <div className="overflow-hidden">
+      <ComponentTitle title={"Photo Gallery"} />
       <div
         style={{ width: width, maxWidth: "1920px" }}
-        className="grid grid-cols-12 mt-12 gap-1"
+        className="grid grid-cols-12 gap-1"
       >
         <div className="col-span-3">
           <PhotoGalleryNavigator
