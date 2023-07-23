@@ -4,13 +4,13 @@ const GradientText = ({ text, className }) => {
   return (
     <div
       style={{
-        background: "linear-gradient(-25deg, #05AAE0 50%, white 50%)",
+        background: "linear-gradient(-60deg, #05AAE0 40%, white 50%)",
       }}
-      className="rounded px-2"
+      className="px-2 md:px-4 max-sm:mx-2 rounded-[60px] rounded-tr-none"
     >
       <p
         style={{
-          background: "linear-gradient(-25deg, white 50%, black 50%)",
+          background: "linear-gradient(-60deg, white 40%, #05AAE0 50%)",
           backgroundClip: "text",
           WebkitBackgroundClip: "text",
           color: "transparent",

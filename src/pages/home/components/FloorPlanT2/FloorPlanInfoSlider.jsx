@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import { data } from "../../../../data/floorData";
 import { useTranslation } from "react-i18next";
 import { FaCheck, FaDownload } from "react-icons/fa";
-const FloorPlanInfoSlider = ({ sliderRef }) => {
+const FloorPlanInfoSlider = ({ sliderRef, selected }) => {
   const { i18n } = useTranslation();
   return (
     <div className="flex flex-col justify-center items-center">
@@ -26,7 +26,9 @@ const FloorPlanInfoSlider = ({ sliderRef }) => {
             <div
               key={index}
               dir={i18n.language == "en" ? "" : "rtl"}
-              className="h-[300px] xl:h-[500px] flex flex-col justify-center items-center space-y-8 "
+              className={`${
+                selected == index ? "scale-100" : "scale-0"
+              } h-[300px] xl:h-[500px] flex flex-col justify-center items-center space-y-8`}
             >
               <p className="font-semibold text-big"> {item.title} </p>
 

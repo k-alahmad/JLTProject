@@ -1,8 +1,14 @@
 import React, { useState } from "react";
 import { data } from "../../../../data/photoGallery";
 import { motion } from "framer-motion";
-const PhotoGalleryNavigator = ({ selected, setSelected, insideSliderRef }) => {
-  const [selectedImg, setSelectedImg] = useState();
+import Slider from "react-slick";
+const PhotoGalleryNavigator = ({
+  selected,
+  setSelected,
+  insideSliderRef,
+  navSliderRef,
+}) => {
+  const [selectedImg, setSelectedImg] = useState(0);
   return (
     <div className="px-[2%]">
       <div className="flex flex-row justify-center items-center text-small font-semibold">
@@ -12,9 +18,10 @@ const PhotoGalleryNavigator = ({ selected, setSelected, insideSliderRef }) => {
               <button
                 onClick={() => {
                   setSelected(index);
+                  navSliderRef.current.slickGoTo(index);
                 }}
                 key={index}
-                className={`uppercase h-20  border-b-2 origin-bottom rounded ${
+                className={`uppercase h-20  border-b-2 origin-bottom rounded-3xl rounded-tr-none ${
                   selected == index
                     ? "bg-primary text-white"
                     : "border-primary transition-all duration-500"
@@ -26,32 +33,52 @@ const PhotoGalleryNavigator = ({ selected, setSelected, insideSliderRef }) => {
           })}
         </div>
       </div>
-      <motion.div
-        className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-2 2xl:grid-cols-3 gap-1 mt-6 w-full"
-        initial={{ opacity: 0 }}
-        animate={{
-          opacity: 1,
-        }}
-        transition={{ duration: 0.5 }}
-        key={selected}
+      {/* <motion.div
+          className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-3  gap-1 mt-6 w-full"
+          initial={{ opacity: 0 }}
+          animate={{
+            opacity: 1,
+          }}
+          transition={{ duration: 0.5 }}
+          key={selected}
+        > */}
+      <Slider
+        slidesToShow={1}
+        slidesToScroll={1}
+        arrows={false}
+        dots={false}
+        ref={navSliderRef}
+        className="w-full h-full max-lg:hidden"
       >
-        {data.navBtns[selected].imgs.map((img, index) => {
+        {data.navBtns.map((item, index) => {
           return (
-            <img
-              src={img}
+            <div
               key={index}
-              className={`rounded-lg h-44 2xl:h-52 object-cover cursor-pointer border-4 transition-all duration-500 drop-shadow-2xl ${
-                selectedImg == index ? "border-primary" : "border-transparent"
-              }`}
-              alt=""
-              onClick={() => {
-                insideSliderRef.current.slickGoTo(index);
-                setSelectedImg(index);
-              }}
-            />
+              className="!grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-3 gap-1 mt-6 w-full border-none outline-none"
+            >
+              {item.imgs.map((img, index) => {
+                return (
+                  <img
+                    src={img}
+                    key={index}
+                    className={`h-40 object-cover w-full cursor-pointer border-4 transition-all duration-500 rounded-3xl rounded-tr-none ${
+                      selectedImg == index
+                        ? "border-primary"
+                        : "border-transparent"
+                    }`}
+                    alt=""
+                    onClick={() => {
+                      insideSliderRef.current.slickGoTo(index);
+                      setSelectedImg(index);
+                    }}
+                  />
+                );
+              })}
+            </div>
           );
         })}
-      </motion.div>
+      </Slider>
+      {/* </motion.div> */}
     </div>
   );
 };

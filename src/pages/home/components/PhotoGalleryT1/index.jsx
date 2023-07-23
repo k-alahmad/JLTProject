@@ -9,6 +9,7 @@ const PhotoGalleryT1 = () => {
   const { width } = useWindowDimensions();
   const [selected, setSelected] = useState(0);
   const insideSliderRef = useRef();
+  const navSliderRef = useRef();
 
   return (
     <div className="overflow-hidden">
@@ -22,6 +23,7 @@ const PhotoGalleryT1 = () => {
             selected={selected}
             setSelected={setSelected}
             insideSliderRef={insideSliderRef}
+            navSliderRef={navSliderRef}
           />
         </div>
         <div className="col-span-8">

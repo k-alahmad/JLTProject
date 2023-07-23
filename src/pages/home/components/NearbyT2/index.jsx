@@ -4,17 +4,21 @@ import ComponentTitle from "../../../../components/UI/ComponentTitle";
 import { data } from "../../../../data/nearbyData";
 const index = () => {
   return (
-    <div className="w-full">
+    <div className="w-full flex flex-col">
       <ComponentTitle title={"Nearby Places"} />
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-y-5 relative z-30">
         {data.locations.map((item, index) => (
-          <NearByElement icon={item.icon} title={item.name} />
+          <NearByElement key={index} icon={item.icon} title={item.name} />
         ))}
       </div>
-      <div className="max-md:visible invisible w-full border-4 border-black -translate-y-[450px]" />
-      <div className="max-lg:visible invisible w-full border-4 border-black -translate-y-[233px]" />
+      <div className="relative">
+        <div className="max-md:visible invisible border-4 border-black -translate-y-[450px] mx-[2%]" />
+        <div className="max-md:visible invisible w-2 h-[230px] bg-black absolute left-[2%] -top-[450px]" />
+        <div className="max-lg:visible invisible border-4 border-black -translate-y-[233px] mx-[2%]" />
+        <div className="max-lg:visible invisible w-2 h-[230px] bg-black absolute right-[2%] -top-[220px]" />
 
-      <div className="w-full border-4 border-black -translate-y-[14px]" />
+        <div className="border-4 border-black -translate-y-[14px] max-lg:mx-[2%]" />
+      </div>
     </div>
   );
 };

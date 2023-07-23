@@ -16,7 +16,7 @@ const ImagesSlider = ({ imgs, insideSliderRef }) => {
         className="absolute cursor-pointer z-30 right-[5%] top-[50%] rounded-full"
         onClick={onClick}
       >
-        <MdArrowForwardIos className="text-white shadow-2xl drop-shadow-2xl text-[70px]" />
+        <MdArrowForwardIos className="text-primary drop-shadow-2xl text-[70px]" />
       </div>
     );
   }
@@ -26,7 +26,7 @@ const ImagesSlider = ({ imgs, insideSliderRef }) => {
         className="absolute cursor-pointer z-30 left-[5%] top-[50%] rounded-full"
         onClick={onClick}
       >
-        <MdArrowBackIos className="text-white shadow-2xl drop-shadow-2xl text-[70px]" />
+        <MdArrowBackIos className="text-primary drop-shadow-2xl text-[70px]" />
       </div>
     );
   }
@@ -80,7 +80,7 @@ const ImagesSlider = ({ imgs, insideSliderRef }) => {
           <img
             key={i}
             src={item}
-            className="h-[750px] w-full object-cover"
+            className="h-[300px] md:h-[750px] w-full object-fill"
             alt=""
           />
         );
