@@ -10,7 +10,7 @@ const GradientText = ({ text, className }) => {
     >
       <p
         style={{
-          background: "linear-gradient(-25deg, white 50%, #05AAE0 50%)",
+          background: "linear-gradient(-25deg, white 50%, black 50%)",
           backgroundClip: "text",
           WebkitBackgroundClip: "text",
           color: "transparent",
@@ -24,4 +24,5 @@ const GradientText = ({ text, className }) => {
   );
 };
 
+// #05AAE0
 export default GradientText;

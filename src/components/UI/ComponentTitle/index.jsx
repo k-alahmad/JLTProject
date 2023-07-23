@@ -1,10 +1,10 @@
 import React from "react";
 import GradiantText from "../GradientText";
 const ComponentTitle = ({ title }) => {
-  //   let splittedTitle = title.split(" ");
+  // let splittedTitle = title.split(" ");
 
   return (
-    <div className="text-[69px] flex justify-center items-center font-bold py-16">
+    <div className="text-[69px] flex justify-center items-center font-bold py-16 uppercase">
       {/* <p>
         {splittedTitle.map((item, index) => {
           return index % 2 == 0 ? (

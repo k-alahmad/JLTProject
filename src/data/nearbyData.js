@@ -58,23 +58,23 @@ export const data = {
       duration: "25 ",
       img: DubaiOpera,
     },
-    {
-      icon: MedydanIcon,
-      name: "meydan",
-      duration: "10 ",
-      img: Meydan,
-    },
-    {
-      icon: dubaiMallIcon,
-      name: "dubaiMall",
-      duration: "15 ",
-      img: DubaiMall,
-    },
-    {
-      icon: SOBHAHARTLANDIcon,
-      name: "heartland",
-      duration: "10 ",
-      img: SobhaHartland,
-    },
+    // {
+    //   icon: MedydanIcon,
+    //   name: "meydan",
+    //   duration: "10 ",
+    //   img: Meydan,
+    // },
+    // {
+    //   icon: dubaiMallIcon,
+    //   name: "dubaiMall",
+    //   duration: "15 ",
+    //   img: DubaiMall,
+    // },
+    // {
+    //   icon: SOBHAHARTLANDIcon,
+    //   name: "heartland",
+    //   duration: "10 ",
+    //   img: SobhaHartland,
+    // },
   ],
 };
