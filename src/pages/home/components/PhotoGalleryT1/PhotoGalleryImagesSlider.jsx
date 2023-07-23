@@ -6,7 +6,7 @@ import {
   MdArrowBackIos,
   MdArrowForwardIos,
 } from "react-icons/md";
-import { data } from "../../../../data/paymentPlanData";
+// import { data } from "../../../../data/paymentPlanData";
 
 const ImagesSlider = ({ imgs, insideSliderRef }) => {
   // const [currentSlide, setCurrentSlide] = useState(0);

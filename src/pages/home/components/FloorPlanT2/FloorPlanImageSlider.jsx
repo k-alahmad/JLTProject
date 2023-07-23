@@ -2,6 +2,7 @@ import React from "react";
 import LazyImage from "../../../../components/UI/LazyImage";
 import { data } from "../../../../data/floorData";
 import Slider from "react-slick";
+
 const FloorPlanImageSlider = ({ sliderRef }) => {
   return (
     <Slider
@@ -21,7 +22,7 @@ const FloorPlanImageSlider = ({ sliderRef }) => {
           <LazyImage
             key={index}
             src={item.img}
-            divStyle={"h-[500px] xl:h-[650px] w-full"}
+            divStyle={"h-[500px] xl:h-[750px] w-full"}
             skelatonStyle={"h-[500px] xl:h-[650px] w-full"}
             alt={item.title}
             imgStyle={"h-[500px] xl:h-[650px] w-full object-contain"}

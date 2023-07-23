@@ -15,16 +15,16 @@ const PhotoGalleryT1 = () => {
       <ComponentTitle title={"Photo Gallery"} />
       <div
         style={{ width: width, maxWidth: "1920px" }}
-        className="grid grid-cols-12 gap-1"
+        className="lg:grid lg:grid-cols-12 gap-1"
       >
-        <div className="col-span-3">
+        <div className="col-span-4">
           <PhotoGalleryNavigator
             selected={selected}
             setSelected={setSelected}
             insideSliderRef={insideSliderRef}
           />
         </div>
-        <div className="col-span-9">
+        <div className="col-span-8">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{
@@ -32,6 +32,10 @@ const PhotoGalleryT1 = () => {
             }}
             transition={{ duration: 0.5 }}
             key={selected}
+            style={{
+              maxWidth: "1920px",
+            }}
+            className="max-lg:mt-8"
           >
             <ImagesSlider
               imgs={data.navBtns[selected].imgs}

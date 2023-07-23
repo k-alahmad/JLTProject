@@ -18,10 +18,8 @@ const FloorPlanNavigator = ({
                 sliderRef2.current.slickGoTo(index);
                 setSelected(index);
               }}
-              className={`h-20 w-24 border-b-2 origin-bottom rounded flex flex-col justify-center items-center cursor-pointer ${
-                selected == index
-                  ? "bg-primary text-white"
-                  : "border-primary transition-all duration-500"
+              className={`transition-all duration-500 h-20 w-24 border-b-2 origin-bottom rounded flex flex-col justify-center items-center cursor-pointer ${
+                selected == index ? "bg-primary text-white" : "border-primary"
               } `}
             >
               <p className="text-bigger"> {item.btnTitle} </p>

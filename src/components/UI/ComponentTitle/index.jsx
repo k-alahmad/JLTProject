@@ -4,7 +4,7 @@ const ComponentTitle = ({ title }) => {
   // let splittedTitle = title.split(" ");
 
   return (
-    <div className="text-[69px] flex justify-center items-center font-bold py-16 uppercase">
+    <div className="text-[69px] flex justify-center items-center font-bold py-24 text-center md:text-start uppercase">
       {/* <p>
         {splittedTitle.map((item, index) => {
           return index % 2 == 0 ? (
