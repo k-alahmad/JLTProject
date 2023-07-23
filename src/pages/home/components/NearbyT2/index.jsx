@@ -16,7 +16,6 @@ const index = () => {
         <div className="max-md:visible invisible w-2 h-[230px] bg-black absolute left-[2%] -top-[450px]" />
         <div className="max-lg:visible invisible border-4 border-black -translate-y-[233px] mx-[2%]" />
         <div className="max-lg:visible invisible w-2 h-[230px] bg-black absolute right-[2%] -top-[220px]" />
-
         <div className="border-4 border-black -translate-y-[14px] max-lg:mx-[2%]" />
       </div>
     </div>
