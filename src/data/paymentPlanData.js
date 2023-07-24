@@ -22,7 +22,7 @@ export const data = {
 			subtitle: "2 Years Post-handover Plan",
 			feature: [
 				{ text: "20% On Booking " },
-				{ text: "20% On Completion" },
+				{ text: "30% On Completion" },
 				{ text: "50% Installment for 2 Years Divided by 6.25% each 3 Months" },
 			],
 		},
