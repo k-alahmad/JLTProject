@@ -7,7 +7,7 @@ const Text3D = ({ title }) => {
   return (
     <div
       style={{
-        background: "linear-gradient(-60deg, #218DC2 40%, white 60%)",
+        background: "linear-gradient(-60deg, #218DC2 20%, white 80%)",
       }}
       className="textContainer1 pb-2 px-4 md:px-4 max-sm:mx-2 rounded-[60px] rounded-tr-none"
     >
