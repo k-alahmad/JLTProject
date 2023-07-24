@@ -5,7 +5,7 @@ const GradientText = ({ text, className }) => {
       style={{
         background: "linear-gradient(-60deg, #218DC2 40%, white 60%)",
       }}
-      className="textContainer1 pb-2 px-4 md:px-4 max-sm:mx-2 rounded-[60px] rounded-tr-none"
+      className="pb-2 px-4 md:px-4 max-sm:mx-2 rounded-[60px] rounded-tr-none"
     >
       <p
         style={{
