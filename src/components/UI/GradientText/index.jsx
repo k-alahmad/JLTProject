@@ -20,7 +20,7 @@ const GradientText = ({ text, className }) => {
         className={`${className} `}
       >
         <span className="text1"> {splittedTitle[0]} </span>
-        <span className="text2"> {splittedTitle[1]} </span>
+        <span className="text2"> {splittedTitle[1] ?? ""} </span>
       </p>
     </div>
   );

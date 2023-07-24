@@ -12,11 +12,11 @@ const index = () => {
         ))}
       </div>
       <div className="relative">
-        <div className="max-md:visible invisible border-4 border-black -translate-y-[450px] mx-[2%]" />
-        <div className="max-md:visible invisible w-2 h-[230px] bg-black absolute left-[2%] -top-[450px]" />
-        <div className="max-lg:visible invisible border-4 border-black -translate-y-[233px] mx-[2%]" />
-        <div className="max-lg:visible invisible w-2 h-[230px] bg-black absolute right-[2%] -top-[220px]" />
-        <div className="border-4 border-black -translate-y-[14px] max-lg:mx-[2%]" />
+        <div className="max-md:visible invisible border-4 border-gray-500 -translate-y-[450px] mx-[2%]" />
+        <div className="max-md:visible invisible w-2 h-[230px] bg-gray-500 absolute left-[2%] -top-[450px]" />
+        <div className="max-lg:visible invisible border-4 border-gray-500 -translate-y-[233px] mx-[2%]" />
+        <div className="max-lg:visible invisible w-2 h-[230px] bg-gray-500 absolute right-[2%] -top-[220px]" />
+        <div className="border-4 border-gray-500 -translate-y-[14px] max-lg:mx-[2%]" />
       </div>
     </div>
   );
