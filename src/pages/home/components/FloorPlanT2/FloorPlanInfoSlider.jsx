@@ -19,7 +19,6 @@ const FloorPlanInfoSlider = ({ sliderRef, selected }) => {
         touchMove={false}
         arrows={false}
         className="w-[270px]"
-        //   className="h-full max-w-[300px] sm:max-w-[600px] md:max-w-[700px] lg:max-w-[300px] xl:max-w-[350px] 2xl:max-w-[450px]"
       >
         {data.floors.map((item, index) => {
           return (
@@ -28,18 +27,13 @@ const FloorPlanInfoSlider = ({ sliderRef, selected }) => {
               dir={i18n.language == "en" ? "" : "rtl"}
               className={`${
                 selected == index ? "scale-100" : "scale-0"
-              } h-[300px] xl:h-[500px] flex flex-col justify-center items-center space-y-8`}
+              } h-[250px] xl:h-[450px] flex flex-col justify-center items-center space-y-8`}
             >
-              <p className="font-semibold text-big"> {item.title} </p>
-
+              <p className="font-semibold text-big">{item.title}</p>
               <p className="font-semibold text-small">
                 Total: <span className="font-extralight">{item.total}</span>
               </p>
               <div className="flex flex-col space-y-8">
-                <button className="bg-primary rounded  text-white shadow-lg drop-shadow-lg flex items-center justify-center py-2 font-semibold">
-                  <FaDownload className="text-med" />
-                  <p className="text-small px-2">Get All Floor Plans</p>
-                </button>
                 <button className="bg-primary rounded  text-white shadow-lg drop-shadow-lg flex items-center justify-center py-2 font-semibold">
                   <FaCheck className="text-med" />
                   <p className="text-small px-2">Download Brochure</p>

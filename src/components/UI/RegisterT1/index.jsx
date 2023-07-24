@@ -39,7 +39,7 @@ function RegisterT1({ modal }) {
           modal && "bg-gray-100"
         } row-span-2`}
       >
-        {downloadState && !registerState && modal && (
+        {/* {downloadState && !registerState && modal && (
           <div className="col-span-12 text-big lg:text-bigger font-bold text-red-800 flex justify-center items-center">
             {t(data.brochureMessage)}
           </div>
@@ -48,7 +48,7 @@ function RegisterT1({ modal }) {
           <div className="col-span-12 text-big lg:text-bigger font-bold text-red-800 flex justify-center items-center">
             Please Register to view all Rooms
           </div>
-        )}
+        )} */}
         <div className="col-span-6 space-y-12 flex flex-col justify-between items-stretch">
           <div className="space-y-12">
             <p className="font-bold text-bigger xl:text-huge  w-[70%]">

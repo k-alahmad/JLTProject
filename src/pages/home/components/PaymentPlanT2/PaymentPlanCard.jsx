@@ -1,8 +1,21 @@
 import React from "react";
 
-const PaymentPlanCard = ({ title, subTitle, features, selected }) => {
+const PaymentPlanCard = ({
+  title,
+  subTitle,
+  features,
+  selected,
+  onTouchStart,
+  onTouchMove,
+  onTouchEnd,
+}) => {
   return (
-    <div className="flex justify-center items-center w-full cursor-pointer">
+    <div
+      onTouchStart={onTouchStart}
+      onTouchMove={onTouchMove}
+      onTouchEnd={onTouchEnd}
+      className="flex justify-center items-center w-full cursor-pointer"
+    >
       <div
         className={`${
           selected

@@ -18,6 +18,9 @@ const FloorPlanT2 = () => {
           </div>
         </div>
         <div className="col-span-4 space-y-3 lg:space-y-12">
+          <div className="lg:hidden max-lg:-mt-6">
+            <FloorPlanImageSlider selected={selected} sliderRef={sliderRef3} />
+          </div>
           <div className="flex max-md:flex-col lg:flex-col justify-evenly items-center">
             <FloorPlanNavigator
               selected={selected}
@@ -27,9 +30,6 @@ const FloorPlanT2 = () => {
               sliderRef3={sliderRef3}
             />
             <FloorPlanInfoSlider selected={selected} sliderRef={sliderRef} />
-          </div>
-          <div className="lg:hidden max-lg:pt-12">
-            <FloorPlanImageSlider selected={selected} sliderRef={sliderRef3} />
           </div>
         </div>
       </div>

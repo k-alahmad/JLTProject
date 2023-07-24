@@ -21,7 +21,7 @@ const PhotoGalleryNavigator = ({
                   navSliderRef.current.slickGoTo(index);
                 }}
                 key={index}
-                className={`uppercase h-20  border-b-2 origin-bottom rounded-3xl rounded-tr-none ${
+                className={`uppercase h-20  border-2 origin-bottom rounded-3xl rounded-tr-none ${
                   selected == index
                     ? "bg-primary text-white"
                     : "border-primary transition-all duration-500"
