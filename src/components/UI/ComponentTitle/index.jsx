@@ -4,7 +4,7 @@ const ComponentTitle = ({ title }) => {
   // let splittedTitle = title.split(" ");
 
   return (
-    <div className="text-bigger sm:text-[69px] flex justify-center items-center font-bold py-20 text-center md:text-start uppercase">
+    <div className="relative text-bigger sm:text-[69px] flex justify-center items-center font-bold py-20 text-center md:text-start uppercase h-[200px]">
       {/* <p className="grid grid-cols-2">
         {splittedTitle.map((item, index) => {
           return index % 2 == 0 ? (
