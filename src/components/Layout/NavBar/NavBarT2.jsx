@@ -35,7 +35,7 @@ const NavBarT2 = () => {
     <>
       <div className={`flex flex-col justify-center items-center`}>
         <div
-          dir={i18n.language == "en" ? "" : "rtl"}
+          // dir={i18n.language == "en" ? "" : "rtl"}
           className={`${
             header == "white"
               ? "shadow-2xl text-primary"
@@ -59,9 +59,9 @@ const NavBarT2 = () => {
                 <p className="font-normal uppercase p-4 ">{t("register")}</p>
               </div>
             </div>
-            <Dropdown
+            {/* <Dropdown
               textColor={header == "white" ? "text-primary" : "text-white"}
-            />
+            /> */}
             <p className="-mr-6 max-lg:hidden">{t("menu")}</p>
             <div
               onClick={() => setMobileOpen(true)}

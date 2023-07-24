@@ -9,6 +9,7 @@ import RegisterT1 from "../../components/UI/RegisterT1";
 import HeaderT2 from "./components/HeaderT2";
 import PaymentPlanT2 from "./components/PaymentPlanT2";
 import PhotoGalleryT1 from "./components/PhotoGalleryT1";
+import Loader from "../../components/UI/Loader";
 const Home = () => {
   return (
     <>

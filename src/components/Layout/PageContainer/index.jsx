@@ -11,27 +11,27 @@ import { useDispatch } from "react-redux";
 import Modal from "../../UI/Modal/Modal";
 import Register from "../../UI/RegisterT1";
 const PageLayout = ({ children, type }) => {
-  const location = useLocation();
-  const navigate = useNavigate();
+  // const location = useLocation();
+  // const navigate = useNavigate();
   const dispatch = useDispatch();
   const { i18n } = useTranslation();
   const { width } = useWindowDimensions();
   const [w, setW] = useState(width);
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-    localStorage.setItem("lng", lng);
-  };
-  useEffect(() => {
-    if (location.pathname == "/ar") {
-      changeLanguage("ar");
-    } else if (location.pathname == "/fa") {
-      changeLanguage("fa");
-    } else if (location.pathname == "/en") {
-      changeLanguage("en");
-    } else if (location.pathname == "/") {
-      navigate(`/${i18n.language}`);
-    }
-  }, [location.pathname]);
+  // const changeLanguage = (lng) => {
+  //   i18n.changeLanguage(lng);
+  //   localStorage.setItem("lng", lng);
+  // };
+  // useEffect(() => {
+  //   if (location.pathname == "/ar") {
+  //     changeLanguage("ar");
+  //   } else if (location.pathname == "/fa") {
+  //     changeLanguage("fa");
+  //   } else if (location.pathname == "/en") {
+  //     changeLanguage("en");
+  //   } else if (location.pathname == "/") {
+  //     navigate(`/${i18n.language}`);
+  //   }
+  // }, [location.pathname]);
   useEffect(() => {
     if (width !== w) {
       window.location.reload();
