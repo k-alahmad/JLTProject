@@ -39,12 +39,12 @@ function RegisterT1({ modal }) {
           modal && "bg-gray-100"
         } row-span-2`}
       >
-        {/* {downloadState && !registerState && modal && (
+        {downloadState && !registerState && modal && (
           <div className="col-span-12 text-big lg:text-bigger font-bold text-red-800 flex justify-center items-center">
             {t(data.brochureMessage)}
           </div>
         )}
-        {counterState && !registerState && !downloadState && modal && (
+        {/* {counterState && !registerState && !downloadState && modal && (
           <div className="col-span-12 text-big lg:text-bigger font-bold text-red-800 flex justify-center items-center">
             Please Register to view all Rooms
           </div>
