@@ -18,63 +18,63 @@ import SobhaHartland from "../assets/images/map/SobhaHartland.webp";
 import kalifaIcon from "../assets/icons/kalifa.svg";
 
 export const data = {
-  template: 1,
-  title: "nearbyTitle",
-  subTitle: "nearbySubTitle",
-  locations: [
-    {
-      icon: PalmJumeirahIcon,
-      name: "palm",
-      duration: "25 ",
-      img: PalmJumeirah,
-    },
-    {
-      icon: airportIcon,
-      name: "airport",
-      duration: "12 ",
-      img: DXBAIRPORT,
-    },
-    {
-      icon: kalifaIcon,
-      name: "khalifa",
-      duration: "15 ",
-      img: BurjKhalifa,
-    },
-    {
-      icon: dubaiFrameIcon,
-      name: "frame",
-      duration: "15 ",
-      img: DubaiFrame,
-    },
-    {
-      icon: BusinessBayIcon,
-      name: "businessBay",
-      duration: "25 ",
-      img: BusinessBay,
-    },
-    {
-      icon: dubaiOperaIcon,
-      name: "opera",
-      duration: "25 ",
-      img: DubaiOpera,
-    },
-    // {
-    //   icon: MedydanIcon,
-    //   name: "meydan",
-    //   duration: "10 ",
-    //   img: Meydan,
-    // },
-    // {
-    //   icon: dubaiMallIcon,
-    //   name: "dubaiMall",
-    //   duration: "15 ",
-    //   img: DubaiMall,
-    // },
-    // {
-    //   icon: SOBHAHARTLANDIcon,
-    //   name: "heartland",
-    //   duration: "10 ",
-    //   img: SobhaHartland,
-    // },
-  ],
+	template: 1,
+	title: "nearbyTitle",
+	subTitle: "nearbySubTitle",
+	locations: [
+		{
+			icon: PalmJumeirahIcon,
+			name: "palm",
+			duration: "25 ",
+			img: PalmJumeirah,
+		},
+		{
+			icon: airportIcon,
+			name: "DXB Airport",
+			duration: "12 ",
+			img: DXBAIRPORT,
+		},
+		{
+			icon: kalifaIcon,
+			name: "Downtown",
+			duration: "15 ",
+			img: BurjKhalifa,
+		},
+		{
+			icon: dubaiFrameIcon,
+			name: "JBR",
+			duration: "15 ",
+			img: DubaiFrame,
+		},
+		{
+			icon: BusinessBayIcon,
+			name: "Global Village",
+			duration: "25 ",
+			img: BusinessBay,
+		},
+		{
+			icon: dubaiOperaIcon,
+			name: "Metro",
+			duration: "25 ",
+			img: DubaiOpera,
+		},
+		// {
+		//   icon: MedydanIcon,
+		//   name: "meydan",
+		//   duration: "10 ",
+		//   img: Meydan,
+		// },
+		// {
+		//   icon: dubaiMallIcon,
+		//   name: "dubaiMall",
+		//   duration: "15 ",
+		//   img: DubaiMall,
+		// },
+		// {
+		//   icon: SOBHAHARTLANDIcon,
+		//   name: "heartland",
+		//   duration: "10 ",
+		//   img: SobhaHartland,
+		// },
+	],
 };

@@ -50,6 +50,7 @@ export default {
 				primary: "#05AAE0",
 				secondary: "#2980B9",
 				third: "white",
+				shade: "#1F5061",
 			},
 			backgroundImage: {
 				header:
