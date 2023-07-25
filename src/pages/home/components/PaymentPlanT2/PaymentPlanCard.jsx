@@ -1,27 +1,10 @@
 import React from "react";
 
-const PaymentPlanCard = ({
-  title,
-  subTitle,
-  features,
-  selected,
-  onTouchStart,
-  onTouchMove,
-  onTouchEnd,
-}) => {
+const PaymentPlanCard = ({ title, subTitle, features, selected }) => {
   return (
-    <div
-      onTouchStart={onTouchStart}
-      onTouchMove={onTouchMove}
-      onTouchEnd={onTouchEnd}
-      className="flex justify-center items-center w-full cursor-pointer"
-    >
+    <div className="flex justify-center items-center w-full cursor-pointer">
       <div
-        className={`${
-          selected
-            ? "bg-gradient-to-b from-secondary to-primary shadow-2xl"
-            : "bg-gradient-to-t from-secondary to-primary shadow-xl"
-        } transition-all duration-500 h-[450px] xl:h-[500px] w-[300px] text-white rounded-[60px] rounded-tr-none flex flex-col justify-evenly items-center font-semibold text-center`}
+        className={`bg-gradient-to-b from-secondary to-primary shadow-2xl transition-all duration-500 h-[450px] xl:h-[500px] w-[300px] text-white rounded-[60px] rounded-tr-none flex flex-col justify-evenly items-center font-semibold text-center`}
       >
         <div className="space-y-1">
           <p className="font-bold text-med">{title} </p>

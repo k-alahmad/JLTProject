@@ -5,7 +5,7 @@ import Text3D2 from "./Text3D2";
 
 const ComponentTitle = ({ title }) => {
   return (
-    <div className="relative text-bigger sm:text-[69px] flex justify-center items-center font-bold py-20 text-center md:text-start uppercase">
+    <div className="relative text-bigger sm:text-huge md:text-[55px] lg:text-[65px] flex justify-center items-center font-bold py-20 text-center md:text-start uppercase">
       {/* <GradiantText text={title} /> */}
       {/* <Text3D1 title={title} /> */}
       <Text3D2 title={title} />
