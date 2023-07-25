@@ -6,7 +6,13 @@ import { MdMail, MdPerson } from "react-icons/md";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/bootstrap.css";
 import Brochure from "../../../assets/pdf/330.pdf";
-import { hideModal, register, counterIsFull } from "../../../redux/modal.slice";
+import {
+	hideModal,
+	register,
+	counterIsFull,
+	selectDownloadState,
+	selectRegisterState,
+} from "../../../redux/modal.slice";
 import { useTranslation } from "react-i18next";
 const CustomInput = ({
 	icon,
@@ -41,7 +47,8 @@ const RegisterForm = () => {
 	const navigate = useNavigate();
 	const dispatch = useDispatch();
 	const form = useRef();
-
+	const downloadState = useSelector(selectDownloadState);
+	const registerState = useSelector(selectRegisterState);
 	const sendEmail = (e) => {
 		e.preventDefault();
 		emailjs
@@ -65,7 +72,7 @@ const RegisterForm = () => {
 		let formData = new FormData(form.current);
 		try {
 			const response = await fetch(
-				"https://hooks.zapier.com/hooks/catch/12792925/3mulj3d/",
+				"https://hooks.zapier.com/hooks/catch/12792925/312q4d0/",
 				{
 					method: "POST",
 					body: formData,
@@ -114,6 +121,12 @@ const RegisterForm = () => {
 				id='email'
 				value={email}
 				onChange={(event) => setEmail(event.target.value)}
+			/>
+			<input
+				type='text'
+				className='hidden'
+				name={"project"}
+				value='MeDoRe Project'
 			/>
 			<PhoneInput
 				country={"ae"}
