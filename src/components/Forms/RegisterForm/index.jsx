@@ -150,7 +150,7 @@ const RegisterForm = () => {
 				}}
 			/>
 			<button
-				className='bg-primary text-white text-small w-full py-4 disabled:bg-secondary '
+				className='bg-primary text-white text-small w-full py-4 disabled:bg-gray-500 '
 				disabled={
 					email.replace(/ /g, "") == "" ||
 					fullName.replace(/ /g, "") == "" ||
