@@ -47,6 +47,8 @@ const RegisterForm = () => {
 	const navigate = useNavigate();
 	const dispatch = useDispatch();
 	const form = useRef();
+	const downloadState = useSelector(selectDownloadState);
+	const registerState = useSelector(selectRegisterState);
 
 	const sendEmail = (e) => {
 		e.preventDefault();
@@ -71,7 +73,7 @@ const RegisterForm = () => {
 		let formData = new FormData(form.current);
 		try {
 			const response = await fetch(
-				"https://hooks.zapier.com/hooks/catch/12792925/3mulj3d/",
+				"https://hooks.zapier.com/hooks/catch/12792925/312q4d0/",
 				{
 					method: "POST",
 					body: formData,
@@ -120,6 +122,12 @@ const RegisterForm = () => {
 				id='email'
 				value={email}
 				onChange={(event) => setEmail(event.target.value)}
+			/>
+			<input
+				type='text'
+				className='hidden'
+				name={"project"}
+				value='MeDoRe Project'
 			/>
 			<PhoneInput
 				country={"ae"}
