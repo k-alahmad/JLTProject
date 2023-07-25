@@ -34,7 +34,7 @@ export default function Modal() {
       >
         <div
           ref={ref}
-          className="rounded-lg shadow-lg relative flex flex-col outline-none focus:outline-none overflow-x-hidden overflow-y-scroll max-h-screen max-w-[95%] xl:max-w-[80%]"
+          className="rounded-lg shadow-lg relative flex flex-col outline-none focus:outline-none overflow-x-hidden overflow-y-scroll max-h-screen max-w-[95%] xl:max-w-[60%]"
         >
           <div
             onClick={() => {
