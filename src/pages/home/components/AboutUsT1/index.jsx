@@ -42,7 +42,7 @@ const AboutUsT1 = () => {
 					<p>
 						Residents can wake up to the serene views of the water every
 						morning. With a flexible post-handover payment plan option
-						available, owning your dream.
+						available, owning your dream home.
 					</p>
 				</div>
 			</div>

@@ -23,7 +23,7 @@ export const data = {
 	textSlider: [
 		{
 			icon: price,
-			title: "AED1.4M",
+			title: "AED1.2M",
 			subTitle: "Starting Price",
 		},
 		{

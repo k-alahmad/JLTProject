@@ -1,20 +1,17 @@
-import BusinessBayIcon from "../assets/icons/BusinessBayIcon.svg";
-import dubaiFrameIcon from "../assets/icons/dubaiFrame.svg";
-import dubaiMallIcon from "../assets/icons/dubaiMall.svg";
-import dubaiOperaIcon from "../assets/icons/dubaiOpera.svg";
 import airportIcon from "../assets/icons/airplane.svg";
-import MedydanIcon from "../assets/icons/horses.svg";
 import PalmJumeirahIcon from "../assets/icons/palm.svg";
-import SOBHAHARTLANDIcon from "../assets/icons/SOBHAHARTLAND.svg";
+import beach from "../assets/icons/beach.svg";
+import metro from "../assets/icons/metro.svg";
+import global from "../assets/icons/global.svg";
 import BurjKhalifa from "../assets/images/map/BurjKhalifa.webp";
 import BusinessBay from "../assets/images/map/BusinessBay.webp";
 import DubaiFrame from "../assets/images/map/DubaiFrame.webp";
-import DubaiMall from "../assets/images/map/DubaiMall.webp";
+
 import DubaiOpera from "../assets/images/map/DubaiOpera.webp";
 import DXBAIRPORT from "../assets/images/map/DXBAIRPORT.webp";
-import Meydan from "../assets/images/map/Meydan.webp";
+
 import PalmJumeirah from "../assets/images/map/PalmJumeirah.webp";
-import SobhaHartland from "../assets/images/map/SobhaHartland.webp";
+
 import kalifaIcon from "../assets/icons/kalifa.svg";
 
 export const data = {
@@ -25,37 +22,37 @@ export const data = {
 		{
 			icon: PalmJumeirahIcon,
 			name: "palm",
-			duration: "25 ",
+			duration: "11 ",
 			img: PalmJumeirah,
 		},
 		{
 			icon: airportIcon,
 			name: "DXB Airport",
-			duration: "12 ",
+			duration: "25 ",
 			img: DXBAIRPORT,
 		},
 		{
 			icon: kalifaIcon,
 			name: "Downtown",
-			duration: "15 ",
+			duration: "20 ",
 			img: BurjKhalifa,
 		},
 		{
-			icon: dubaiFrameIcon,
+			icon: beach,
 			name: "JBR",
-			duration: "15 ",
+			duration: "10 ",
 			img: DubaiFrame,
 		},
 		{
-			icon: BusinessBayIcon,
+			icon: global,
 			name: "Global Village",
 			duration: "25 ",
 			img: BusinessBay,
 		},
 		{
-			icon: dubaiOperaIcon,
+			icon: metro,
 			name: "Metro",
-			duration: "25 ",
+			duration: "3 ",
 			img: DubaiOpera,
 		},
 		// {

@@ -1,8 +1,9 @@
 export const NavElement = [
-  { name: "home", link: "home" },
-  { name: "Payment", link: "payment" },
-  { name: "Nearby", link: "nearby" },
-  { name: "Floor Plan", link: "floorPlan" },
-  { name: "Location", link: "location" },
-  { name: "Contact Us", link: "contactus" },
+	{ name: "home", link: "home" },
+	{ name: "Payment", link: "payment" },
+	{ name: "Why JLT", link: "about" },
+	{ name: "Gallery", link: "gallery" },
+	{ name: "Floor Plan", link: "floorPlan" },
+	{ name: "Nearby", link: "nearby" },
+	{ name: "Contact Us", link: "contactus" },
 ];

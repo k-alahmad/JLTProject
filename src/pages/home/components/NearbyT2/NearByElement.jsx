@@ -6,7 +6,7 @@ const NearByElement = ({ icon, title, duration }) => {
 			<div className='py-2 w-[150px] h-[150px] bg-primary rounded-lg flex flex-col items-center justify-evenly border-4 border-shade group-hover:scale-110 transition-all duration-300'>
 				<img src={icon} alt='Icon' className=' w-12 h-12' />
 				<p className='text-white font-semibold text-small'>{title}</p>
-				<p className='text-white font-light text-smaller'>{duration}</p>
+				<p className='text-white font-light text-smaller'>{duration} Min</p>
 			</div>
 			<div className='w-full flex justify-center items-center'>
 				<div className='w-2 bg-primary border-4 h-10 border-shade' />

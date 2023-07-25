@@ -8,7 +8,12 @@ const index = () => {
 			<ComponentTitle title={"Nearby Places"} />
 			<div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-y-5 relative z-30'>
 				{data.locations.map((item, index) => (
-					<NearByElement key={index} icon={item.icon} title={item.name} />
+					<NearByElement
+						key={index}
+						icon={item.icon}
+						title={item.name}
+						duration={item.duration}
+					/>
 				))}
 			</div>
 			<div className='relative'>
